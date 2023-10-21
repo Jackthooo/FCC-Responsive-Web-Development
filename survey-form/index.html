@@ -1,0 +1,47 @@
+<!-- basic survey form for FreeCodeCamp responsive web development certificate course (certificate project 1/5) -->
+
+
+<!DOCTYPE=html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+<h1 id="title">
+  General Interest Survey 
+</h1>
+<p id="description">Fill out this form so we can gauge your interests!</p>
+<form id="survey-form">
+  <fieldset> <!-- contains all labels and inputs*/ -->
+  <label for="name" id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"></label>
+  <label for="email" id="email-label">Email <input id="email" type="email" required placeholder="Enter your email"></label>
+  <label for="number" id="number-label">Age (optional) <input id="number" type="number" min="12" max="105" placeholder="Age">
+  <label for="dropdown">How did you hear about us? <select id="dropdown" name="dropdown">
+    <option value="">Select one</option>
+    <option value="1">Our Instagram</option>
+    <option value="2">Other Club Instagrams</option>
+    <option value="3">Tabling on campus</option>
+    <option value="4">Involvement fair</option>
+    <option value="5">Other</option>
+  </select>
+    <legend>How would you rate your writing experience level?</legend> 
+    <label for="little"> <input type="radio" name="experience" class="inline" id="little" value="0">Little to no experience</label>
+    <label for="some"> <input type="radio" name="experience" class="inline" id="some" value="1">Some previous writing experience</label>
+    <label for="good"> <input type="radio"  
+class="inline"id="good" name="experience" value="2">A good amount of writing experience</label>
+    <label for="alot"> <input type="radio" class="inline" id="alot" name="experience" value="3">Alot of previous writing experience
+  </label>
+
+  <legend>What projects would you be interested in joining?</legend>
+  <label for="research-articles"><input type="checkbox" class="inline" id="research-articles" value="0">Research Articles</label>
+  <label for="event-coverage"><input type="checkbox" class="inline" id="event-coverage" value="1">Event Coverage</label>
+<label for="podcast"><input type="checkbox" class="inline" id="podcast" value="2">Podcast</label>
+<label for="other"><input type="checkbox" class="inline" id="other" value="3">Other</label>
+
+<label for="text-area">Please submit any other inquires or information here!<textarea id="other-questions" cols="50" rows="10"></textarea>
+  </fieldset>
+<input type="submit" id="submit" value="Submit" />
+</form>
+</body>
+</html>
