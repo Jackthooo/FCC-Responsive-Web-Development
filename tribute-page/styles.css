@@ -5,12 +5,29 @@ img{
   align-items: center;
 }
 
+.image-div img{
+  align-items: center;
+}
+
 .head-title{
   text-align: center;
   padding: 0.5rem 0 0.5rem 0;
 }
 
+.albums{
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center; 
+  max-width: 1400px; 
+  padding: 20px 10px;
+  gap: 20px; 
+}
 
+li{
+  margin-top: 0.5rem;
+}
 
 .image-caption p{
   margin-top: 0.5rem;
@@ -30,3 +47,11 @@ body{
 *{
   font-family: "Lucida Console", monospace;
 }
+
+.albums img{
+  width: 300px; 
+  max-width: 350px; 
+  height: 300px; 
+  object-fit: cover; 
+}
+
